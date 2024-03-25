@@ -1,13 +1,116 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 1rem 0;
+  border-bottom: 2px solid #333;
 }
+.header-text {
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #fffde8;
+  border-bottom: 2px solid #333;
+}
+.note-heading {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.note-button {
+  margin-top: 2rem;
+  padding: 14px 34px;
+  font-size: 16px;
+  background-color: aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-bottom: 4px solid #333;
+  transition: all .1s ease-in;
+}
+.note-button:hover {
+  background-color: rgb(223, 241, 255);
+}
+.note-button:active {
+  border-bottom: 2px solid #333;
+  transform: translateY(2px);
+  margin-bottom: 2px;
+}
+.notes-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: aliceblue;
+  min-height: 32.7vh;
+}
+
+.textarea {
+  resize: none;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+}
+.textarea:focus {
+  background-color: #fffde8;
+}
+.textarea-heading {
+  resize: none;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 16px;
+  border-bottom: 4px solid #333;
+}
+.textarea-heading:focus {
+  background-color: aliceblue;
+}
+.textarea-button {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.textarea-button:hover {
+  color: #ff0000;
+}
+
+.single-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fffacd;
+  border: 2px solid #333;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
+}
+.single-note:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 1);
+}
+
+
